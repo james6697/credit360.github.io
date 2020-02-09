@@ -53,10 +53,11 @@
     
     function myFunction(){
       var scroll = document.body.scollTop || document.document.body.scrollTop;
-      var height = document.documentELement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll/height)*100;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (scroll/height)*100;
       console.log(scrolled);
       document.getElementById("textBox").innerHTML = scrolled;
+      
    
     
     }
